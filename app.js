@@ -6,7 +6,7 @@ let vm = Vue.createApp({
     },
     computed:{
         circle_classes(){
-            {purple: isPurple}
+            return {purple: this.isPurple}
         }
     }
 }).mount('#app')

@@ -13,8 +13,19 @@ let vm = Vue.createApp({
         {
           name: 'Amy',
           message: 'Skydiving is fun!'
+        },
+        {
+          name: 'Paulo',
+          message: 'I like Vue'
         }
       ]
+    }
+  },
+  methods: {
+    move() {
+      const first = this.people.shift()
+
+      this.people.push(first)
     }
   }
 }).mount('#app')
